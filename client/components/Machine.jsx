@@ -12,13 +12,6 @@ function Machine() {
     audio.play()
   }
 
-  const [color, setColor] = useState('white')
-  const colors = ['blue', 'green', 'yellow', 'white', 'black']
-  function changeColor() {
-    const randNum = Math.floor(Math.random() * colors.length)
-    setColor(colors[randNum])
-  }
-
   return (
     <div className="pixels">
       {drumData.map((pixel, i) => {
@@ -29,8 +22,6 @@ function Machine() {
           const randNum = Math.floor(Math.random() * colors.length)
           setColor(colors[randNum])
         }
-
-        fu
 
         function changeColorToWhite(e) {
           setColor('white')
