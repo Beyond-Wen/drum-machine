@@ -5,9 +5,7 @@ function Machine() {
     <div>
       <h2>Home</h2>
       <p></p>
-      <audio controls>
-        <source src='./sounds/drum-10' type='wav'></source>
-      </audio>
+
     </div>
   )
 }
