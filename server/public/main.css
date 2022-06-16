@@ -26,14 +26,14 @@ li {
   margin-bottom: 30px;
 }
 
-.nav-items {
+.nav-items, .home-button {
   text-decoration: none;
   color: gray;
   margin-left: -20px;
   font-size: 1.8rem;
 }
 
-.nav-items:hover {
+.nav-items:hover, .home-button:hover {
   color: rgb(131, 47, 47);
 }
 
