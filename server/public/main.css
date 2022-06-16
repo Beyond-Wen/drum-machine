@@ -4,7 +4,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.main, .title {
+.main,
+.title {
   display: flex;
   flex-direction: row;
 }
@@ -25,4 +26,12 @@ a {
 
 img {
   max-height: 200px;
+}
+
+button {
+  width: 300px;
+  height: 300px;
+}
+#play {
+  cursor: url('/images/stick-100.png'), auto;
 }
