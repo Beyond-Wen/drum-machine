@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Nav() {
   const instruments = ['Drum', 'Guitar']
@@ -7,7 +8,8 @@ function Nav() {
       <h2>Nav</h2>
       <ul>
         {instruments.map((instrument, i) => {
-          return <li key={i}>{instrument}</li>
+          return <li key={i}>
+            <Link to={{instrument}}>{instrument}</Link></li>
         })}
       </ul>
     </div>
