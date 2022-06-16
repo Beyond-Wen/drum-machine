@@ -9,11 +9,36 @@ li {
 }
 
 .nav-bar {
+  font-family: Arial, Helvetica, sans-serif;
   border-right: 0.2px solid lightgray;
-  width: 200px;
+  width: 300px;
   margin-left: 50px;
   margin-top: 100px;
   font-size: 50px;
+}
+
+.nav-bar > h2 {
+  color: rgb(131, 47, 47, 0.8);
+  font-size: 2.8rem;
+}
+
+.nav-bar li {
+  margin-bottom: 30px;
+}
+
+.nav-items {
+  text-decoration: none;
+  color: gray;
+  margin-left: -20px;
+  font-size: 1.8rem;
+}
+
+.nav-items:hover {
+  color: rgb(131, 47, 47);
+}
+
+.nav-items div {
+  font-size: 1.4rem;
 }
 
 .main {
@@ -44,8 +69,8 @@ li {
 }
 
 .pixels {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 200px;
+
   display: flex;
   flex-wrap: wrap;
   width: 800px;
@@ -53,6 +78,7 @@ li {
   justify-content: flex-start;
   /* filter: opacity(0.4) drop-shadow(0 0 0 red); */
 }
+
 .pixel {
   flex: 25%;
   cursor: url('/images/cursor3.png'), auto;
