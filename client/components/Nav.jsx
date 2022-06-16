@@ -8,8 +8,14 @@ function Nav() {
       <h2>Nav</h2>
       <ul>
         {instruments.map((instrument, i) => {
-          return <li key={i}>
-            <Link to={{instrument}}>{instrument}</Link></li>
+          return (
+            <li key={i}>
+              <Link to={instrument} className="nav-items">
+                {instrument}
+                {instrument !== 'Drum' && <div>(coming soon)</div>}
+              </Link>
+            </li>
+          )
         })}
       </ul>
     </div>
