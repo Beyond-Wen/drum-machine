@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #faf8f1;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
@@ -31,10 +31,15 @@ img {
 button {
   width: 300px;
   height: 300px;
-}
+} */
 .drum {
   width: 300px;
   height: 300px;
   border: 1px solid black;
   cursor: url('/images/cursor1.png'), auto;
+}
+
+.drum-img {
+  width: 100px;
+  height: 100px;
 }
