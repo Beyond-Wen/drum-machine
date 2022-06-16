@@ -11,8 +11,10 @@ function App() {
       </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
-        <Nav />
-        <Machine />
+        {/* <Nav /> */}
+        <div className="instrument">
+          <Machine />
+        </div>
       </div>
     </>
   )
