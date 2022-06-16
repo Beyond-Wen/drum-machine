@@ -32,6 +32,9 @@ button {
   width: 300px;
   height: 300px;
 }
-#play {
-  cursor: url('/images/stick-100.png'), auto;
+.drum {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  cursor: url('/images/cursor1.png'), auto;
 }

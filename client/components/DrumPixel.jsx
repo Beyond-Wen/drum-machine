@@ -13,7 +13,6 @@ function DrumPixel() {
 
   return (
     <div>
-      {' '}
       {drumData.map((drum, i) => {
         console.log(drum.sound)
         function ogAudio() {
@@ -21,7 +20,7 @@ function DrumPixel() {
           staticAudio.play()
         }
         return (
-          <div key={i} onClick={ogAudio}>
+          <div key={i} onClick={ogAudio} className="drum">
             play
           </div>
         )
