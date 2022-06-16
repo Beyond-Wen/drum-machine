@@ -1,5 +1,7 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
+import Home from './Home'
 import Nav from './Nav'
 import Machine from './Machine'
 
@@ -12,9 +14,17 @@ function App() {
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
         <Nav />
-        <div className="instrument">
-          <Machine />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/instruments/:instrument/"
+            element={
+              <div className="instrument">
+                <Machine />
+              </div>
+            }
+          />
+        </Routes>
       </div>
     </>
   )
