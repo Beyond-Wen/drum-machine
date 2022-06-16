@@ -16,7 +16,6 @@ function DrumPixel(props) {
   // }
   function staticAudio(e) {
     e.preventDefault()
-    console.log(props.sound)
     const audio = new Audio(`${props.sound}`)
     audio.play()
   }
