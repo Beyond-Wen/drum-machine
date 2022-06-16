@@ -14,7 +14,6 @@ function App() {
       <div className="main">
         <Nav />
         <Machine />
-        <DrumPixel />
       </div>
     </>
   )
