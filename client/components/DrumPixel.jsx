@@ -14,15 +14,21 @@ function DrumPixel(props) {
   //   sound: './sounds/....wav',
   //   image: './images/....png'
   // }
+  function staticAudio(e) {
+    e.preventDefault()
+    console.log(props.sound)
+    const audio = new Audio(`${props.sound}`)
+    audio.play()
+  }
+
   return (
-    <div>
-      <img
-        src={props.image}
-        alt={`drum${props.index}}`}
-        onClick={props.clickHandler}
-        className="pixel"
-      />
-    </div>
+    <img
+      src={props.image}
+      alt={`drum${props.index}}`}
+      // onMouseDown={props.clickHandler}
+      onMouseDown={staticAudio}
+      className="pixel"
+    />
   )
   // onMouseEnter={randomDrum}
 }
