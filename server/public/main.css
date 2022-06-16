@@ -49,6 +49,7 @@ li {
   width: 800px;
   height: 600px;
   justify-content: flex-start;
+  /* filter: opacity(0.4) drop-shadow(0 0 0 red); */
 }
 .pixel {
   flex: 25%;
