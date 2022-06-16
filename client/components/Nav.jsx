@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Nav() {
-  const instruments = ['Drum', 'Guitar']
+  const instruments = ['Drum', 'Guitar', 'Keyboard']
   return (
     <div className="nav-bar">
       <h2>Nav</h2>

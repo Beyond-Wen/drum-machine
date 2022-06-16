@@ -83,3 +83,28 @@ li {
   flex: 25%;
   cursor: url('/images/cursor3.png'), auto;
 }
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
+.homepage > h1 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 3rem;
+  display: block;
+  margin-left: -80px;
+
+}
+
+.homepage div {
+  flex: 1;
+}
+
+.homepage img {
+  width: 400px;
+  height: auto;
+}
