@@ -2,7 +2,6 @@ import React from 'react'
 
 import Nav from './Nav'
 import Machine from './Machine'
-import DrumPixel from './DrumPixel'
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <div className="main">
         <Nav />
         <Machine />
-        <DrumPixel />
       </div>
     </>
   )

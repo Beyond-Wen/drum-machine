@@ -1,32 +1,28 @@
 import React from 'react'
 import drumData from '../../data/drums'
 
-function DrumPixel() {
-  function random(min, max) {
-    return Math.floor(Math.random() * (max - min) + min)
-  }
-
-  function randomDrum() {
-    const audio = new Audio(`/sounds/drum-${random(1, 12)}.wav`)
-    audio.play()
-  }
-
+function DrumPixel(props) {
+  // props = {
+  //   clickHandler: function randomDrum() {
+  //     // length 12
+  //     // 0 - 0.99999 x 12 = 0- 11.999999999999 = 0 - 11
+  //     const randNum = Math.floor(Math.random() * (drum.Data.length))
+  //     const audio = new Audio(`/sounds/drum-${randNum}.wav`)
+  //     audio.play()
+  //   },
+  //   key: 1 or 2
+  //   sound: './sounds/....wav',
+  //   image: './images/....png'
+  // }
   return (
     <div>
-      {drumData.map((drum, i) => {
-        console.log(drum.sound)
-        function ogAudio() {
-          const staticAudio = new Audio(drum.sound)
-          staticAudio.play()
-        }
-        return (
-          <div key={i} onClick={ogAudio} className="drum">
-            play
-          </div>
-        )
-      })}
+      <img
+        src={props.image}
+        alt={`drum${props.index}}`}
+        onClick={props.clickHandler}
+        className="pixel"
+      />
     </div>
   )
-
   // onMouseEnter={randomDrum}
 }
