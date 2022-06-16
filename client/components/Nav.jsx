@@ -1,11 +1,14 @@
 import React from 'react'
 
 function Nav() {
+  const instruments = ['Drum', 'Guitar']
   return (
-    <div>
+    <div className="nav-bar">
       <h2>Nav</h2>
       <ul>
-        <li>stuff</li>
+        {instruments.map((instrument) => {
+          return <li>{instrument}</li>
+        })}
       </ul>
     </div>
   )
