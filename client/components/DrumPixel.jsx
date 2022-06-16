@@ -30,5 +30,3 @@ function DrumPixel() {
 
   // onMouseEnter={randomDrum}
 }
-
-export default DrumPixel
