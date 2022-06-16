@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import drumData from '../../data/drums'
 
 function DrumPixel(props) {
@@ -18,7 +18,16 @@ function DrumPixel(props) {
     e.preventDefault()
     const audio = new Audio(`${props.sound}`)
     audio.play()
+    if (props.color !== 'white') {
+      props.changeColorToWhite()
+    }
   }
+
+  const [opacity, setOpacity] = useState(1)
+
+  useEffect(() => {
+    props.color === 'white' ? setOpacity(1) : setOpacity(0.7)
+  }, [props.color])
 
   return (
     <img
@@ -27,6 +36,11 @@ function DrumPixel(props) {
       // onMouseDown={props.clickHandler}
       onMouseDown={staticAudio}
       className="pixel"
+      style={{
+        filter: `opacity(${opacity}) drop-shadow(0 0 0 ${props.color})`,
+      }}
+      onContextMenu={props.rightClickFunc}
+      button={props.auxClickFunc}
     />
   )
   // onMouseEnter={randomDrum}

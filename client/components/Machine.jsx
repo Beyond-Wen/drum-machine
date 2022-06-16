@@ -1,4 +1,4 @@
-import React, { useDebugValue } from 'react'
+import React, { useState } from 'react'
 import DrumPixel from './DrumPixel'
 import drumData from '../../data/drums'
 
@@ -12,9 +12,29 @@ function Machine() {
     audio.play()
   }
 
+  const [color, setColor] = useState('white')
+  const colors = ['blue', 'green', 'yellow', 'white', 'black']
+  function changeColor() {
+    const randNum = Math.floor(Math.random() * colors.length)
+    setColor(colors[randNum])
+  }
+
   return (
     <div className="pixels">
       {drumData.map((pixel, i) => {
+        const [color, setColor] = useState('white')
+        const colors = ['blue', 'green', 'yellow', 'white', 'black']
+        function changeColor(e) {
+          e.preventDefault()
+          const randNum = Math.floor(Math.random() * colors.length)
+          setColor(colors[randNum])
+        }
+
+        fu
+
+        function changeColorToWhite(e) {
+          setColor('white')
+        }
         return (
           <DrumPixel
             key={pixel.drumId}
@@ -22,6 +42,9 @@ function Machine() {
             sound={pixel.sound}
             image={pixel.image}
             index={i}
+            color={color}
+            rightClickFunc={changeColor}
+            changeColorToWhite={changeColorToWhite}
           />
         )
       })}
