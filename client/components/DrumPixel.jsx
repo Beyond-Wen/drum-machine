@@ -34,7 +34,7 @@ function DrumPixel(props) {
       src={props.image}
       alt={`drum${props.index}}`}
       // onMouseDown={props.clickHandler}
-      onMouseDown={staticAudio}
+      onClick={staticAudio}
       className="pixel"
       style={{
         filter: `opacity(${opacity}) drop-shadow(0 0 0 ${props.color})`,
