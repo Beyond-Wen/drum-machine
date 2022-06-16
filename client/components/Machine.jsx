@@ -45,19 +45,5 @@ function Machine() {
     </div>
   )
 
-  // return (
-  //   <>
-  //     {drumData.map((pixel) => (
-  //       <DrumPixel
-  //         key={pixel.drumId}
-  //         sound={pixel.sound}
-  //         image={pixel.image}
-  //         functionName={randomDrum}
-  //       />
-  //     ))}
-  //   </>
-  // )
-
-  /* <Pixel img={} sound={} id{} */
 }
 export default Machine
