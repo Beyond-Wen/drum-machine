@@ -32,11 +32,11 @@ button {
   width: 300px;
   height: 300px;
 } */
-.drum {
+.pixel {
   width: 300px;
   height: 300px;
   border: 1px solid black;
-  cursor: url('/images/cursor1.png'), auto;
+  cursor: url('/images/cursor3.png'), auto;
 }
 
 .drum-img {

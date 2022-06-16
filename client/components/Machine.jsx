@@ -6,24 +6,25 @@ function Machine() {
   function randomDrum() {
     // length 12
     // 0 - 0.99999 x 12 = 0- 11.999999999999 = 0 - 11
-    const randNum = Math.floor(Math.random() * drum.Data.length)
+    const randNum = Math.floor(Math.random() * drumData.length)
     const audio = new Audio(`/sounds/drum-${randNum}.wav`)
     audio.play()
   }
 
   return (
-    <>
-      {drumData.map((pixel) => {
+    <div className="pixels">
+      {drumData.map((pixel, i) => {
         return (
           <DrumPixel
-            clickHandler={randomDrum}
             key={pixel.drumId}
+            clickHandler={randomDrum}
             sound={pixel.sound}
-            banana={pixel.image}
+            image={pixel.image}
+            index={i}
           />
         )
       })}
-    </>
+    </div>
   )
 
   // return (

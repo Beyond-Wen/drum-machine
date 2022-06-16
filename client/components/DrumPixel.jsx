@@ -18,9 +18,9 @@ function DrumPixel(props) {
     <div>
       <img
         src={props.image}
-        alt={props.key}
-        onClick={props.functionName}
-        className="drum-img"
+        alt={`drum${props.index}}`}
+        onClick={props.clickHandler}
+        className="pixel"
       />
     </div>
   )
