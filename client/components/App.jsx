@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="title">
-        <h1>Drum Machine Woo</h1>
+        <h1>Instrument Revolution</h1>
       </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/instruments/:instrument/"
+            path="/:instrument/"
             element={
               <div className="instrument">
                 <Machine />
