@@ -16,9 +16,12 @@ function Home() {
         </Link>
       </div>
       <div>
-        <Link to="/Keyboard" className="nav-items">
+        <a
+          href="https://luis-leh.github.io/key-board/index.html"
+          className="nav-items"
+        >
           <img src="./images/keyboard.jpg" alt="piano keyboard" />
-        </Link>
+        </a>
       </div>
     </div>
   )
