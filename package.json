@@ -11,7 +11,9 @@
     "client": "npm run webpack -- --watch",
     "server": "node server",
     "test": "jest --watch --noStackTrace",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "build": "webpack",
+    "build": "webpack --mode=production"
   },
   "babel": {
     "presets": [
@@ -65,5 +67,9 @@
     "semi": false,
     "singleQuote": true
   },
-  "jest": { "testEnvironment": "jsdom" }
+  "jest": { "testEnvironment": "jsdom" 
+  },
+  "engines": {
+    "node": "16.14.2"
+  }
 }
