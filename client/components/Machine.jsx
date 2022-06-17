@@ -7,7 +7,18 @@ function Machine() {
     <div className="pixels">
       {drumData.map((pixel, i) => {
         const [color, setColor] = useState('white')
-        const colors = ['blue', 'green', 'yellow', 'white', 'black']
+        const colors = [
+          'blue',
+          'green',
+          'yellow',
+          'black',
+          'pink',
+          'orange',
+          'teal',
+          'purple',
+          'red',
+          'magenta',
+        ]
 
         function changeColor() {
           const randNum = Math.floor(Math.random() * colors.length)
