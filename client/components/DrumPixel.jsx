@@ -19,7 +19,7 @@ function DrumPixel(props) {
   return (
     <img
       src={props.image}
-      alt={`drum${props.index}}`}
+      alt={`drum${props.index}`}
       // onMouseDown={props.clickHandler}
       onClick={staticAudio}
       className="pixel"
