@@ -11,7 +11,9 @@
     "client": "npm run webpack -- --watch",
     "server": "node server",
     "test": "jest --watch --noStackTrace",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "build": "webpack",
+    "build": "webpack --mode=production"
   },
   "babel": {
     "presets": [
@@ -37,6 +39,8 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.5",
     "babel-loader": "^8.2.2",
     "eslint": "^8.10.0",
     "eslint-config-eda": "^1.2.0",
@@ -62,5 +66,10 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
+  },
+  "jest": { "testEnvironment": "jsdom" 
+  },
+  "engines": {
+    "node": "16.14.2"
   }
 }
